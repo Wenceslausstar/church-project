@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Grace Fellowship Church</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="index.html" class="logo"><span>✝</span> Grace Fellowship</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Worship & Community</h1>
+      <p>
+        Join us for worship, teaching, prayer, and opportunities to grow in
+        faith together.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn">Plan Your Visit</a>
+        <button class="btn btn-accent" onclick="openModal()">
+          Request Prayer
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-intro">
+        <h2 class="section-title">Upcoming Ways to Connect</h2>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Sunday Worship</h3>
+          <p><strong>Time:</strong> 9:00 AM & 11:00 AM</p>
+          <p>
+            Spirit-filled praise, biblical teaching, and a welcoming church
+            family.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Midweek Bible Study</h3>
+          <p><strong>Time:</strong> Wednesdays at 7:00 PM</p>
+          <p>
+            Deeper teaching, prayer, and discussion designed to strengthen your
+            faith.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Youth Fellowship</h3>
+          <p><strong>Time:</strong> Fridays at 6:30 PM</p>
+          <p>
+            Music, games, encouragement, and discipleship for students and young
+            people.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-content page-card">
+        <h2 class="section-title">What to Expect</h2>
+        <ul class="info-list">
+          <li>Warm, welcoming worship with practical biblical teaching.</li>
+          <li>
+            Prayer ministry and pastoral care for individuals and families.
+          </li>
+          <li>Small groups and outreach opportunities for every age.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="modal" id="prayerModal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <h3 class="modal-title">Submit a Prayer Request</h3>
+        <form id="prayerForm" onsubmit="handlePrayerSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label for="request">Prayer Request</label>
+            <textarea
+              id="request"
+              rows="4"
+              required
+              placeholder="How can we pray for you?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <footer id="contacts">
+      <h3 class="contact-title">Contact Us</h3>
+      <p class="contact-line">
+        Grace Fellowship Church &bull; 123 Faith Way, Cityville, ST 12345
+      </p>
+      <p class="contact-email">
+        Email: info@gracefellowship.org &bull; Phone: (555) 019-2834
+      </p>
+      <p>&copy; 2026 Grace Fellowship Church. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
