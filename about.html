@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Grace Fellowship Church</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="index.html" class="logo"><span>✝</span> Grace Fellowship</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>About Our Church</h1>
+      <p>
+        A welcoming faith community committed to service, discipleship, and
+        spiritual growth.
+      </p>
+      <div class="hero-actions">
+        <a href="services.html" class="btn">Join a Service</a>
+        <button class="btn btn-accent" onclick="openModal()">
+          Request Prayer
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-content page-card">
+        <h2 class="section-title">Our Mission</h2>
+        <p>
+          Grace Fellowship Church was founded to help people encounter Jesus,
+          grow in faith, and live with purpose. We believe church is more than a
+          place to gather; it is a family where people are encouraged, equipped,
+          and sent to serve.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h3>Faith</h3>
+          <p>
+            We believe in the transforming power of Jesus Christ and the truth
+            of scripture.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Community</h3>
+          <p>
+            We welcome people from every background and walk of life into a
+            loving community.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Service</h3>
+          <p>
+            We seek to love and serve our neighbors through compassion,
+            generosity, and action.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="prayerModal">
+      <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <h3 class="modal-title">Submit a Prayer Request</h3>
+        <form id="prayerForm" onsubmit="handlePrayerSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label for="request">Prayer Request</label>
+            <textarea
+              id="request"
+              rows="4"
+              required
+              placeholder="How can we pray for you?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <footer id="contacts">
+      <h3 class="contact-title">Contact Us</h3>
+      <p class="contact-line">
+        Grace Fellowship Church &bull; 123 Faith Way, Cityville, ST 12345
+      </p>
+      <p class="contact-email">
+        Email: info@gracefellowship.org &bull; Phone: (555) 019-2834
+      </p>
+      <p>&copy; 2026 Grace Fellowship Church. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
